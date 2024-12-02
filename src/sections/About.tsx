@@ -1,4 +1,4 @@
-import me from "../assets/me.png";
+import me from "../assets/me.jpg";
 import SectionTitle from "../components/SectionTitle";
 
 const About = () => {

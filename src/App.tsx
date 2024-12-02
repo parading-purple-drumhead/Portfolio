@@ -19,6 +19,7 @@ function App() {
     AOS.init({
       offset: aosOffset,
       easing: "ease-out",
+      once: true,
     });
   }, []);
 

@@ -8,11 +8,11 @@ import vrChristmas from "../assets/projects/vr_christmas.jpg";
 import vrStore from "../assets/projects/vr_store.jpg";
 import arKnickknacks from "../assets/projects/ar_knickknacks.jpg";
 import validate from "../assets/projects/validate.png";
-import sbag from "../assets/projects/sbag.png";
-import whatsCooking from "../assets/projects/whats_cooking.png";
-import everythingPets from "../assets/projects/everything_pets.png";
-import flamestream from "../assets/projects/flamestream.png";
-import vinylz from "../assets/projects/vinylz.png";
+import sbag from "../assets/projects/sbag.jpg";
+import whatsCooking from "../assets/projects/whats_cooking.jpg";
+import everythingPets from "../assets/projects/everything_pets.jpg";
+import flamestream from "../assets/projects/flamestream.jpg";
+import vinylz from "../assets/projects/vinylz.jpg";
 import SectionTitle from "../components/SectionTitle";
 
 const projects: Project[] = [
