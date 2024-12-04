@@ -53,7 +53,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed top-0 z-10 w-screen border-b-4 border-cyan-400 bg-slate-800 px-5 py-3 lg:sticky">
+    <div className="navbar fixed top-0 z-10 w-screen border-b-4 border-cyan-400 bg-slate-800 px-5 py-3 lg:sticky lg:px-40">
       <nav>
         <div>
           {/* Navbar links */}
