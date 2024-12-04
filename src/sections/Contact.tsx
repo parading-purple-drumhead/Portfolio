@@ -20,17 +20,20 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact bg-slate-800 px-40 py-20">
-      <div className="contact-content text-white">
+    <div className="contact bg-slate-800 py-20">
+      <div className="contact-content mx-auto w-[95vw] text-white sm:w-10/12 md:w-4/5 lg:w-10/12">
         <SectionTitle title="Contact" />
         {!formSent && (
           <p className="text-center text-lg text-cyan-400" data-aos="fade-left">
             Have a question or just want to connect?
           </p>
         )}
-        <div className="contact-form mx-auto w-2/5" data-aos="zoom-in">
+        <div
+          className="contact-form mx-auto w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5"
+          data-aos="zoom-in"
+        >
           {!formSent && (
-            <form className="mt-10 flex flex-col gap-2">
+            <form className="mt-10 flex flex-col gap-5">
               <input
                 type="text"
                 id="name"
