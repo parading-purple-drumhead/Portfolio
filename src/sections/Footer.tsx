@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="social-icons mx-auto mb-10 flex w-1/5 justify-between gap-5">
+      <div className="social-icons mx-auto mb-10 flex w-4/5 justify-between gap-5 sm:w-3/5 md:w-2/5 lg:w-1/5">
         {/* Email */}
         <a href="mailto:sudhanshubroy@gmail.com" className="social-icon">
           <svg
