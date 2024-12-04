@@ -28,7 +28,7 @@ const ImageModal = ({ open, children, onClose }: ModalProps) => {
       ></div>
       <div
         className={
-          "modal fixed left-1/2 top-1/2 z-10 max-h-[90vh] w-[90vw] -translate-x-1/2 -translate-y-1/2 touch-manipulation overflow-y-scroll rounded bg-white lg:w-2/3"
+          "modal fixed left-1/2 top-1/2 z-10 max-h-[90vh] w-[90vw] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded bg-white lg:w-2/3"
         }
       >
         <button

@@ -28,7 +28,7 @@ const Modal = ({ open, children, onClose }: ModalProps) => {
       ></div>
       <div
         className={
-          "modal fixed left-1/2 top-0 z-10 max-h-[95vh] w-[90%] -translate-x-1/2 overflow-y-scroll rounded bg-white sm:w-3/4 md:w-2/3 lg:w-2/5"
+          "modal fixed left-1/2 top-1/2 z-10 max-h-[95vh] w-[90%] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded bg-white sm:w-3/4 md:w-2/3 lg:w-2/5"
         }
       >
         <button
