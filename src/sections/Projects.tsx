@@ -156,7 +156,7 @@ const Projects = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 px-40 py-20">
+    <div className="min-h-screen bg-gray-100 py-20">
       <SectionTitle title="Projects" />
 
       {/* Filter Buttons */}
@@ -189,7 +189,7 @@ const Projects = () => {
 
       {/* Project Grid */}
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        className="mx-auto grid w-[95vw] grid-cols-2 sm:w-10/12 md:w-4/5 lg:w-10/12 lg:grid-cols-3"
         data-aos="fade-up"
       >
         <AnimatePresence>
@@ -202,15 +202,15 @@ const Projects = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="group relative h-80 bg-white"
+                className="group relative h-40 bg-white sm:h-56 md:h-72 lg:h-96"
               >
                 {/* Hover overlay */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-10 bg-black/70 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/70 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 sm:gap-10">
                   <div className="project-info -translate-y-10 transform text-white transition-transform duration-300 ease-in-out group-hover:translate-y-0">
-                    <h3 className="mb-3 text-center text-2xl font-semibold">
+                    <h3 className="mb-3 text-center text-base font-semibold sm:text-2xl">
                       {project.title}
                     </h3>
-                    <div className="tags flex gap-2">
+                    <div className="tags hidden gap-2 sm:flex">
                       {project.tags?.map((tag) => (
                         <span
                           key={tag}

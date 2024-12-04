@@ -46,11 +46,11 @@ html {
 }
 
 .project-filter-container {
-  @apply mx-auto mb-10 flex w-1/2 justify-between text-center font-semibold;
+  @apply mx-auto mb-10 flex w-11/12 justify-between text-center font-semibold sm:w-4/5 md:w-2/3 lg:w-1/2;
 }
 
 .project-filter {
-  @apply cursor-pointer border-b-2 border-b-gray-100 px-8 py-4 uppercase text-gray-500 transition ease-out hover:border-b-pink-500 hover:text-gray-800;
+  @apply cursor-pointer border-b-2 border-b-gray-100 px-4 py-2 uppercase text-gray-500 transition ease-out hover:border-b-pink-500 hover:text-gray-800 md:px-6 md:py-3 md:text-lg lg:px-8 lg:py-4 lg:text-xl;
 }
 
 .project-filter.selected {
