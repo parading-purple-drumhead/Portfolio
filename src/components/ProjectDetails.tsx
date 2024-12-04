@@ -38,14 +38,15 @@ const ProjectDetails = ({ project }: { project: Project }) => {
           </button>
         </div>
       </div>
-      <div className="project-details mb-5 px-5">
+      <div className="project-details mb-5 px-5 text-center sm:text-start">
         <h3 className="mb-1 text-4xl font-semibold text-gray-700">
           {project.title}
         </h3>
-        <h4 className="font-semibold uppercase text-gray-400">
+        <h4 className="mb-3 font-semibold uppercase text-gray-400">
           {project.summary}
         </h4>
-        <div className="tags-and-link mt-3 flex items-center justify-between gap-5">
+        <hr />
+        <div className="tags-and-link mt-5 flex flex-col items-center justify-between gap-5 sm:flex-row">
           <div className="tags flex gap-2">
             {project.tags?.map((tag) => (
               <span
@@ -109,7 +110,7 @@ const ProjectDetails = ({ project }: { project: Project }) => {
         </div>
 
         <hr className="my-5" />
-        <p className="mb-5 text-gray-600">{project.description}</p>
+        <p className="mb-5 text-justify text-gray-600">{project.description}</p>
       </div>
 
       <ImageModal
