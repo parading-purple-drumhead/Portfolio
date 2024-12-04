@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [currentSection, setCurrentSection] = useState<string>("");
 
   useEffect(() => {
@@ -45,13 +46,59 @@ const Navbar = () => {
       // Save the current section to localStorage
       localStorage.setItem("currentSection", id);
       setCurrentSection(id);
+
+      // Close the dropdown menu on mobile
+      setIsDropdownOpen(false);
     }
   };
 
   return (
-    <div className="navbar navbar sticky top-0 z-10 border-b-4 border-cyan-400 bg-slate-800 px-40 py-3">
+    <div className="navbar fixed top-0 z-10 w-screen border-b-4 border-cyan-400 bg-slate-800 px-5 py-3 lg:sticky">
       <nav>
-        <ul className="flex gap-20">
+        <div>
+          {/* Navbar links */}
+          <ul className="hidden gap-20 lg:flex">
+            <li
+              className={`nav-link ${currentSection === "landing" ? "active" : ""}`}
+              onClick={() => scrollTo("landing")}
+            >
+              Home
+            </li>
+            <li
+              className={`nav-link ${currentSection === "about" ? "active" : ""}`}
+              onClick={() => scrollTo("about")}
+            >
+              About
+            </li>
+            <li
+              className={`nav-link ${currentSection === "projects" ? "active" : ""}`}
+              onClick={() => scrollTo("projects")}
+            >
+              Projects
+            </li>
+            <li
+              className={`nav-link ${currentSection === "contact" ? "active" : ""}`}
+              onClick={() => scrollTo("contact")}
+            >
+              Contact
+            </li>
+          </ul>
+          <div className="flex justify-end lg:hidden">
+            <button
+              className="text-white"
+              onClick={() => {
+                setIsDropdownOpen((prev) => !prev);
+              }}
+            >
+              Hamburger
+            </button>
+          </div>
+        </div>
+
+        {/* Dropdown menu */}
+        <ul
+          className={`${isDropdownOpen ? "max-h-[50vh]" : ""} flex max-h-0 flex-col items-center gap-5 overflow-hidden transition-all duration-300 ease-linear lg:hidden`}
+        >
           <li
             className={`nav-link ${currentSection === "landing" ? "active" : ""}`}
             onClick={() => scrollTo("landing")}

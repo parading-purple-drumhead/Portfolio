@@ -34,7 +34,7 @@ html {
 }
 
 .nav-link {
-  @apply cursor-pointer text-xl uppercase text-white transition ease-out;
+  @apply cursor-pointer py-1 text-xl uppercase text-white transition ease-out;
 }
 
 .nav-link.active {
