@@ -17,16 +17,16 @@ const About = () => {
           <span className="text-2xl font-bold">That's me!</span>
         </div>
         <div className="flex flex-col gap-10 lg:w-2/3" data-aos="fade-left">
-          <p className="text-justify sm:text-lg lg:text-start lg:text-xl lg:leading-loose">
+          <p className="text-justify sm:text-xl lg:text-start lg:leading-loose">
             Hello, I'm Sudhanshu Basuroy, a computer science Master's graduate
-            from the University of Illinois, Chicago. With five years of
+            from the University of Illinois - Chicago. With five years of
             experience in full-stack web development, I specialize in creating
             practical and user-friendly websites. Currently focused on
             human-computer interaction (HCI), I'm exploring the possibilities of
             Augmented Reality (AR) and Virtual Reality (VR) systems in my
             academic pursuits.
           </p>
-          <p className="text-justify sm:text-lg lg:text-start lg:text-xl lg:leading-loose">
+          <p className="text-justify sm:text-xl lg:text-start lg:leading-loose">
             In the tech space, I enjoy translating ideas into reality, balancing
             both intuitive interfaces and robust backend systems. Beyond coding,
             I'm intrigued by the intersection of technology, design, and human
