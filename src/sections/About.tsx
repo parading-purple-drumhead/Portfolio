@@ -3,7 +3,7 @@ import SectionTitle from "../components/SectionTitle";
 
 const About = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-10 bg-gray-50 py-10 text-gray-600">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-10 bg-gray-50 py-20 text-gray-600">
       <SectionTitle title="About Me" />
 
       <div className="items-stretch gap-10 px-5 sm:px-10 md:px-20 lg:flex lg:px-32">
