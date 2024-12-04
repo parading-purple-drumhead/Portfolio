@@ -6,9 +6,9 @@ const vhToPixels = (screenWidth: number) => {
   if (screenWidth >= 1024) {
     offset = 50;
   } else if (screenWidth >= 768) {
-    offset = 40;
-  } else if (screenWidth >= 640) {
     offset = 30;
+  } else if (screenWidth >= 640) {
+    offset = 25;
   } else {
     offset = 20;
   }
