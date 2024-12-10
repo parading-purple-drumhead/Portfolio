@@ -14,6 +14,7 @@ import everythingPets from "../assets/projects/everything_pets.jpg";
 import flamestream from "../assets/projects/flamestream.jpg";
 import vinylz from "../assets/projects/vinylz.jpg";
 import SectionTitle from "../components/SectionTitle";
+import starry from "../assets/projects/starry.jpg";
 
 const projects: Project[] = [
   {
@@ -50,6 +51,19 @@ const projects: Project[] = [
       "A website for an accounting firm, showcasing their services, team, and contact information",
     summary: "Accounting firm website",
     website: "https://sbagllp.com/",
+  },
+  {
+    id: "starry",
+    title: "Starry Night",
+    category: "AR/VR",
+    image: starry,
+    tags: ["Unity", "CAVE2", "Virtual Reality"],
+    description:
+      "An immersive VR experience that offers users a captivating first-person perspective to explore the wonders of the night sky",
+    summary: "Room-scale VR experience",
+    website: "https://cs-528-virtual-reality-sudhanshu.netlify.app/",
+    github:
+      "https://github.com/parading-purple-drumhead/CS-528-Virtual-Reality-Project",
   },
   {
     id: "whats_cooking",
